@@ -1,5 +1,9 @@
-def prompt_quiz_type() -> str:
-    """Prompt user to select quiz type and return selection"""
+def prompt_quiz_options() -> dict:
+    """Prompt user to select quiz options and return selections"""
+    options = {
+        "type": "",
+        "amount": 0
+    }
     menu = """
 🧠 Welcome to the quiz app! 🧠
 -----------------------------
@@ -7,7 +11,14 @@ def prompt_quiz_type() -> str:
 2) Acronyms Quiz"""
     print(menu)
     while True:
-        selection = input("Select a quiz type by number: ")
-        if selection in ["1", "2"]:
-            return "terms" if selection == "1" else "acronyms"
-        print("🚫 Invalid selection - Try again.")
+        type_selection = input("Select a quiz type by number: ")
+        if type_selection == "1":
+            options["type"] = "terms"
+            print("Terms quiz selected")
+        elif type_selection == "2":
+            options["type"] = "acronyms"
+            print("Acronyms quiz selected")
+        else:
+            print("🚫 Invalid selection - Try again.")
+            continue
+        # Todo: present / prompt for amount
