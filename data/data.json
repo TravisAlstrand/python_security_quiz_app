@@ -1,0 +1,26 @@
+{
+    "terms": [
+        {
+            "question": "What is your name?",
+            "correct_answer": "Travis",
+            "incorrect_answers": ["Gunner", "Taco", "Krista"]
+        }, 
+        {
+            "question": "What is not your name?",
+            "correct_answer": "Gunner",
+            "incorrect_answers": ["Travis", "Travis", "Travis"]
+        }
+    ],
+    "acronyms": [
+        {
+            "question": "C.I.A.",
+            "correct_answer": "confidentiality integrity availability"
+        },
+        {
+            "question": "A.A.A.",
+            "correct_answer": "authentication authorization accounting"
+        }
+    ]
+
+
+}
