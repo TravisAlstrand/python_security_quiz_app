@@ -19,4 +19,7 @@ if __name__ == "__main__":
 
     quiz_type_selection = prompt_quiz_options()
     print(quiz_type_selection)
-    quiz = Quiz(quiz_type_selection, Session)
+    session = Session()
+    quiz = Quiz(quiz_type_selection, session)
+    quiz.start_quiz()
+    session.close()
