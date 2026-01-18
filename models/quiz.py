@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from quiz_item import QuizItem
+from .quiz_item import QuizItem
 import random
 
 
